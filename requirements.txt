@@ -1,0 +1,16 @@
+# Photo Organizer - Python Dependencies
+# Core dependencies are stdlib only.
+# These are optional but recommended.
+
+# Faster JSON parsing (optional, falls back to stdlib json)
+# orjson>=3.9.0
+
+# Progress bars for long scans (optional)
+# tqdm>=4.66.0
+
+# Pillow for image processing (needed for duplicate detection - Phase 5)
+# Pillow>=10.0.0
+
+# No required external Python packages - uses only stdlib + system tools:
+#   - exiftool (sudo apt install libimage-exiftool-perl)
+#   - imagemagick (sudo apt install imagemagick)
