@@ -91,17 +91,9 @@ fi
 # ── Make scripts executable ────────────────────────────────────
 chmod +x photo_audit.py photo_tools.py
 
-# ── Install IronClaw skill ─────────────────────────────────────
+# ── IronClaw skill (WIP) ─────────────────────────────────────
 echo ""
-SKILL_DIR="$HOME/.ironclaw/skills"
-if [ -d "$HOME/.ironclaw" ]; then
-    mkdir -p "$SKILL_DIR"
-    cp ironclaw_skill/photo_collection_manager.md "$SKILL_DIR/"
-    echo "  ✅ IronClaw skill installed to $SKILL_DIR"
-else
-    echo "  ℹ️  IronClaw not found — skill not installed"
-    echo "     Install manually later: mkdir -p ~/.ironclaw/skills && cp ironclaw_skill/photo_collection_manager.md ~/.ironclaw/skills/"
-fi
+echo "  ℹ️  IronClaw skill available at ironclaw_skill/photo_collection_manager.md"
 
 # ── Summary ────────────────────────────────────────────────────
 echo ""
@@ -115,9 +107,6 @@ fi
 echo ""
 echo "  Next steps:"
 echo "    1. Edit .env if needed"
-echo "    2. Activate the venv:  source .venv/bin/activate"
-echo "    3. Run the audit:  python3 photo_audit.py"
-echo "    4. Start IronClaw: ironclaw"
-echo "       Then ask: 'Show me photo collection stats'"
-echo "    5. When done:  deactivate"
+echo "    2. Run the pipeline:  ./run_pipeline.sh --year 2024 --dry-run"
+echo "    3. Or scan first:    ./run_audit.sh --resume"
 echo ""

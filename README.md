@@ -164,19 +164,9 @@ photos/
 ./run_tools.sh propagate-gps --folder-year 2024 --window 4
 ```
 
-### IronClaw Integration
+### IronClaw Integration (WIP)
 
-Optional natural language interface:
-
-```bash
-mkdir -p ~/.ironclaw/skills
-cp ironclaw_skill/photo_collection_manager.md ~/.ironclaw/skills/
-```
-
-Then in IronClaw:
-- *"Show me photo collection stats"*
-- *"Analyze 5 photos from the 1960s"*
-- *"Tag all analyzed photos from 2024"*
+IronClaw integration is a work in progress. The skill file is included but not yet fully tested with IronClaw's skill installation system.
 
 ## Database Schema
 
